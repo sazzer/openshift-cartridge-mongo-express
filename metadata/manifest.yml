@@ -1,0 +1,33 @@
+Name: mongo-express
+Description: Mongo Express cartridge version 0.30.55.
+Version: '0.30.55'
+License: MIT License
+License-Url: https://opensource.org/licenses/MIT
+Vendor: https://github.com/mongo-express/mongo-express
+Website: https://github.com/mongo-express/mongo-express
+Display-Name: Mongo Express 0.30.55
+Cartridge-Short-Name: MONGO_EXPRESS
+Cartridge-Version: '0.0.1'
+Cartridge-Vendor: sazzer
+Source-Url: https://github.com/sazzer/openshift-cartridge-mongo-express
+Categories:
+- nosql
+- admin
+- web_framework
+- experimental
+Help-Topics:
+  MongoDB Manual: http://docs.mongodb.org/manual/
+Provides:
+- mongo-express
+
+Scaling:
+  Min: 1
+  Max: 1
+
+Endpoints:
+- Private-IP-Name: IP
+  Private-Port-Name: PORT
+  Private-Port: 3000
+  Protocols:
+  - http
+
